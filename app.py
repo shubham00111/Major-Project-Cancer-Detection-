@@ -41,7 +41,7 @@ IMG_SIZE = 150 # size of images
 UPLOAD_FOLDER = 'uploads'
 
 
-model = load_model("C:/Users/Shubham/OneDrive/Desktop/flaskDemo/effnet3.h5")
+model = load_model("C:/Users/Shubham/OneDrive/Desktop/flaskDemo/static/effnet3.h5")
 
 
 
