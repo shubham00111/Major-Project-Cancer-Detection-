@@ -70,16 +70,16 @@ def predict():
 
     if p==0:
         print('The model predicts that there is Glioma tumor')
-        output="glioma"
+        output="The model predicts that there is Glioma tumor"
     elif p==1:
         print('The model predicts that there is no tumor')
-        output="no tumor"
+        output="The model predicts that there is no tumor"
     elif p==2:
         print('The model predicts that there is Meningioma tumor')
-        output="m"
+        output="The model predicts that there is Meningioma tumor"
     else:
         print('The model predicts that there is pituitary tumor')
-        output="p"
+        output="The model predicts that there is pituitary tumor"
 
     if p!=1:
         print(f'The Model predicts that it is a {p}')
