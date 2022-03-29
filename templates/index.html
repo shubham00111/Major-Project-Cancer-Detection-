@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css')}}"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>My Website</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>Brain Cancer Detection</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">About</a></li>
+              <li><a href="#projects" data-after="Services">Results</a></li>
+              <li><a href="#boss" data-after="Contact">Upload</a></li>
+              <li><a href="#contact" data-after="Contact">Team</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>We are a Group of 4<span></span></h1>
+          <h1>
+            We made this website that helps detecting Brain Tumor using MRI
+            Images<span></span>
+          </h1>
+          <a href="#projects" type="button" class="cta">Prediction Results</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    
+     <!-- Definiton Section -->
+     
+     <!-- brain cancer and glioma tumor -->
+     <div id="definition" >
+        <div class="brain-cancer">
+            <div class="head-section" style="background-color: #4c3ab7;">
+              BRAIN CANCER
+            </div>
+            <div class="main-section" style="border: 2px solid #4c3ab7 ;">
+              A brain tumor is a mass or growth of abnormal cells in your brain.
+
+Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors.
+
+How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.
+
+Brain tumor treatment options depend on the type of brain tumor you have, as well as its size and location
+            </div>
+        </div>
+        <div class="glioma-cancer">
+            <div class="head-section" style="background-color: #04aa7a;">
+                GLIOMA CANCER
+              </div>
+              <div class="main-section" style="border: 2px solid #04aa7a;"> Glioma is a type of tumor that occurs in the brain and spinal cord. Gliomas begin in the gluey supportive cells (glial cells) that surround nerve cells and help them function.
+
+Three types of glial cells can produce tumors. Gliomas are classified according to the type of glial cell involved in the tumor, as well as the tumor's genetic features, which can help predict how the tumor will behave over time and the treatments most likely to work.
+
+</div>
+            </div>
+     </div>
+
+     <!-- pitutary and meningioma -->
+     <div id="definition" >
+        <div class="brain-cancer">
+            <div class="head-section" style="background-color:#8127ab;">
+              PITUITARY TUMOR
+            </div>
+            <div class="main-section" style="border: 2px solid #8127ab;">
+             Pituitary tumors are abnormal growths that develop in your pituitary gland. Some pituitary tumors result in too much of the hormones that regulate important functions of your body. Some pituitary tumors can cause your pituitary gland to produce lower levels of hormones.
+
+Most pituitary tumors are noncancerous (benign) growths (adenomas). Adenomas remain in your pituitary gland or surrounding tissues and don't spread to other parts of your body.
+
+There are various options for treating pituitary tumors, including removing the tumor, controlling its growth and managing your hormone levels with medications. Your doctor may recommend observation — or a ''wait and see'' approach.
+
+
+            </div>
+        </div>
+        <div class="glioma-cancer">
+            <div class="head-section" style="background-color: #bf3858;">
+                MENINGIOMA TUMOR
+              </div>
+              <div class="main-section" style="border: 2px solid #bf3858;"> A meningioma is a tumor that arises from the meninges — the membranes that surround the brain and spinal cord. Although not technically a brain tumor, it is included in this category because it may compress or squeeze the adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head.
+
+Most meningiomas grow very slowly, often over many years without causing symptoms. But sometimes, their effects on nearby brain tissue, nerves or vessels may cause serious disability.
+
+Meningiomas occur more commonly in women and are often discovered at older ages, but they may occur at any age.
+
+Because most meningiomas grow slowly, often without any significant signs and symptoms, they do not always require immediate treatment and may be monitored over time.
+
+
+
+</div>
+            </div>
+     </div>
+    
+
+    <!-- Definition section end -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Prediction<span>Results</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Supervised Learning Algorithms Accuracy</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w2.jpeg')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Supervised Learning Algorithms Precision</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w3.jpeg')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Efficient Net B0 Accuracy Graph</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w4-b0.png')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Resnet 50 accuracy graph</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w9-resnet.png')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Resnet 152 accuracy graph</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w6-152.png')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Efficient Net B5 accuracy graph</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w7-b5.png')}}" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Basic CNN accuracy graph</h1>
+            </div>
+            <div class="project-img">
+              <img src="{{url_for('static', filename='css/w8-cnn.png')}}" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- Drop Down Menu for  -->
+      <div style="font-size:30px;position:absolute;margin-left: 14%;color: darkblue;">Comparison of Algorithms on the basis of :</div>
+      <select id="target" >
+        <!-- <option value="">...</option> -->
+        <option value="content_1" >Validation Accuracy</option>
+        <option value="content_2">Average Runtime vs Epochs</option>
+        <option value="content_3">Recall</option>
+        <option value="content_4">Precision</option>
+        <select>
+            
+        <div id="content_1" class="vis">
+          <!-- val. accuracy -->
+                  <div class="vAcc">
+              <div id="barChart">
+                <canvas
+                  class="commonChart"
+                  id="myChart"
+                  width="200"
+                  height="200"
+                ></canvas>
+              </div>
+              <div id="content">
+                  <div clas="heading" style="font-size: larger;">Validation Accuracy</div>
+                  <br>
+                  <div class="heading-content" style="font-size: smaller;color: black;">
+                    In other words, the test (or testing) accuracy often refers to the validation accuracy, that is, the accuracy you calculate on the data set you do not use for training, but you use (during the training process) for validating (or "testing") the generalisation ability of your model or for "early stopping".
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div id="content_2" class="inv">
+          <!-- Average Runtime vs Epochs -->
+                  <div class="vAcc">
+                    <div id="barChart">
+                      <canvas
+                        class="commonChart"
+                        id="dchart"
+                        width="200"
+                        height="200"
+                      ></canvas>
+                    </div>
+                    <div id="content">
+                      <div class="heading" style="font-size: larger;">Average Runtime/ Epochs </div>
+                      <br>
+                      <div class="heading-content" style="color: black;">
+                        The average runtime refers to total time taken by the epochs to run divided by the number of epochs.
+                      </div>
+                    </div>
+          </div>
+
+        </div>
+
+        <div id="content_3" class="inv">
+           <!-- Precision bar Graph chart -->
+                    <div class="vAcc">
+              <div id="barChart">
+                <canvas
+                  class="commonChart"
+                  id="pChart"
+                  width="200"
+                  height="200"
+                ></canvas>
+              </div>
+              <div id="content">
+                <div clas="heading" style="font-size: larger;">Recall</div>
+                  <br>
+                  <div class="heading-content" style="font-size: smaller;color: black;">
+                  Recall literally is how many of the true positives were recalled (found), i.e. how many of the correct hits were also found.</div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="inv" id="content_4">
+            <div class="vAcc">
+      <div id="barChart">
+        <canvas
+          class="commonChart"
+          id="rChart"
+          width="200"
+          height="200"
+        ></canvas>
+      </div>
+      <div id="content">
+        <div clas="heading" style="font-size: larger;">Precision </div>
+                  <br>
+                  <div class="heading-content" style="font-size: smaller;color: black;">Precision (your formula is incorrect) is how many of the returned hits were true positive i.e. how many of the found were correct hits.</div>
+      </div>
+    </div>
+        </div>
+     
+
+   
+
+    
+
+    <div class="table" >
+
+      <div class="table-heading" >Comparison Table</div>
+      <table class="content-table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Epoches</th>
+        <th>Runtime/Epoch</th>
+        <th>Top Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Resnet-50</td>
+        <td>6</td>
+        <td>344s</td>
+        <td>88.1%</td>
+        <td>0.92</td>
+        <td>0.91</td>
+      </tr>
+      <tr class="active-row">
+        <td>EfficientNet B0</td>
+        <td>8</td>
+        <td>180s</td>
+        <td>98.3%</td>
+        <td>0.98</td>
+        <td>0.98</td>
+      </tr>
+      <tr>
+        <td>Resnet-152</td>
+        <td>9</td>
+        <td>707s</td>
+        <td>90.14%</td>
+        <td>0.89</td>
+        <td>0.87</td>
+      </tr>
+      <tr class="active-row">
+        <td>Efficient B5</td>
+        <td>10</td>
+        <td>565</td>
+        <td>80%</td>
+        <td>0.86</td>
+        <td>0.84</td>
+      </tr>
+       <tr>
+        <td>MobileNet v2</td>
+        <td> -</td>
+        <td>400</td>
+        <td>94%</td>
+        <td>0.86</td>
+        <td>0.84</td>
+      </tr>
+      <tr class="active-row">
+        <td>CNN</td>
+        <td>20</td>
+        <td>500</td>
+        <td>85%</td>
+        <td>0.81</td>
+        <td>0.82</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <!-- file prediciton -->
+        
+    <!-- Upload button to upload files -->
+    
+    <form action='/' method="post" enctype="multipart/form-data">
+        <input type="file" name="imagefile">
+        <input type="submit" value="Predict Image">
+    </form>
+
+    
+        <p> Image is a {{result}}  </p>
+    
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">The Team</h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-info">
+              <h1>Team Member 1</h1>
+              <h2>Shubham Rawat</h2>
+              <h2>A2305218347</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-info">
+              <h1>Team Member 2</h1>
+              <h2>Shreyansh Yadav</h2>
+              <h2>A2305218353</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-info">
+              <h1>Team member 3</h1>
+              <h2>Devashree Sharma</h2>
+              <h2>A2305218359</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-info">
+              <h1>Team member 4</h1>
+              <h2>Siddharth Mittal</h2>
+              <h2>A2305218422</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- table -->
+
+    
+
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1>Group Number-114</h1>
+        </div>
+        <h2>Programming Langauge used- PYTHON</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+          </div>
+          <div class="social-item">
+            <a href="#"
+              ><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"
+              ><img src="https://img.icons8.com/bubbles/100/000000/behance.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="{{ url_for('static', filename='css/app.js')}}"></script>
+  </body>
+</html>
+
