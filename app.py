@@ -1,24 +1,24 @@
+# files
 import numpy as np
-import pandas as pd
 
 import cv2
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tqdm import tqdm
+
 import os
-from sklearn.utils import shuffle
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.applications import EfficientNetB0
-from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, TensorBoard, ModelCheckpoint
-from sklearn.metrics import classification_report,confusion_matrix
-
 import io
+from flask import Flask, render_template, request
+from flask import redirect, url_for, render_template, request, flash
 
+from flask import send_from_directory
+
+from werkzeug.utils import secure_filename
 
 from warnings import filterwarnings
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
+from keras.models import load_model
+
+# code
+# for dirname, _, filenames in os.walk('/kaggle/input'):
+#     for filename in filenames:
+#         print(os.path.join(dirname, filename))
 
 
 colors_dark = ["#1F1F1F", "#313131", '#636363', '#AEAEAE', '#DADADA']
@@ -34,21 +34,17 @@ image_size = 150
 os.chdir("C:/Users/Shubham/Downloads/dataset/")
 
 
-from flask import redirect, url_for, render_template, request, flash
 
-from flask import send_from_directory
-
-from werkzeug.utils import secure_filename
 
 ALLOWED_EXTENSIONS = set(['jpg', 'jpeg', 'png'])
 IMG_SIZE = 150 # size of images
 UPLOAD_FOLDER = 'uploads'
 
-from keras.models import load_model
+
 model = load_model("C:/Users/Shubham/OneDrive/Desktop/flaskDemo/effnet3.h5")
 
 
-from flask import Flask, render_template, request
+
 app= Flask(__name__)
 
 @app.route('/', methods=['GET'])
