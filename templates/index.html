@@ -353,13 +353,19 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
         
     <!-- Upload button to upload files -->
 
-    <form action='/' method="post" enctype="multipart/form-data">
-        <input type="file" name="imagefile">
-        <input type="submit" value="Predict Image">
-    </form>
-
-    
-        <p> {{result}}  </p>
+    <div class="upload-img">
+        <div class="head-upload">UPLOAD</div>
+        <div class="about-upload">Test our Transfer Learning Models by uploading an MRI image of a brain and check the results. The server return the result of our most efficent model i.e. EfficientB0 in a text format.</div>
+        <div class="form-upload">
+              <form action='/' method="post" enctype="multipart/form-data">
+                  <input type="file" name="imagefile" class="upload-box">
+                  <br>
+                  <input type="submit" value="Predict Image" class="prediction-submit">
+              </form>
+              
+              <div class="prediction-result">{{result}}</div>
+        </div>
+      </div>
     
     <!-- End Projects Section -->
 
