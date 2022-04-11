@@ -31,7 +31,7 @@ const myChart = new Chart(ctx, {
         labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
         datasets: [{
             label: 'Validation Accuracy',
-            data: [98.2, 79.19, 88.09, 96.48, 93, 86],
+            data: [98.2, 92.0, 88.09, 96.48, 93, 86],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -66,7 +66,7 @@ const dcharts = new Chart(al, {
         labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
         datasets: [{
             label: 'Average Runtime',
-            data: [180, 565, 344, 707, 2, 250],
+            data: [180, 777, 344, 707, 2, 250],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -103,7 +103,7 @@ const pCharts = new Chart(p, {
         labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
         datasets: [{
             label: 'Recall',
-            data: [0.80, 0.98, 0.92, 0.89,0.92 , 0.94],
+            data: [0.80, 0.90, 0.92, 0.89,0.92 , 0.94],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -143,7 +143,7 @@ const rCharts = new Chart(r, {
         labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
         datasets: [{
             label: 'Precision',
-            data: [0.86, 0.98, 0.91, 0.87,0.91 , 0.92],
+            data: [0.86, 0.91, 0.91, 0.87,0.91 , 0.92],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
