@@ -41,7 +41,7 @@ IMG_SIZE = 150 # size of images
 UPLOAD_FOLDER = 'uploads'
 
 
-model = load_model("C:/Users/Shubham/OneDrive/Desktop/flaskDemo/static/effnet3.h5")
+model = load_model("C:/Users/Shubham/OneDrive/Desktop/flaskDemo/static/css/effnet3.h5")
 
 
 
@@ -54,7 +54,7 @@ def hello_world():
 @app.route('/', methods=['POST'])
 def predict():
     imagefile = request.files['imagefile']
-    image_path = "C:/Users/Shubham/OneDrive/Desktop/flaskDemo/images/"+imagefile.filename
+    image_path = "C:/Users/Shubham/OneDrive/Desktop/flaskDemo/env/images/"+imagefile.filename
     imagefile.save(image_path)
     
     
