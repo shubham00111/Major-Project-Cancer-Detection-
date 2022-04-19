@@ -2,7 +2,6 @@
 import numpy as np
 
 import cv2
-
 import os
 import io
 from flask import Flask, render_template, request
@@ -83,10 +82,10 @@ def predict():
 
     return render_template('index.html', result=output)
 
-
+port = int(os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
-    app.run(debug=True, port=33507)
+    app.run(debug=True, port=port)
 
 
 
