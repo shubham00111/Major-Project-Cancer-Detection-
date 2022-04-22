@@ -53,7 +53,7 @@ def hello_world():
 @app.route('/', methods=['POST'])
 def predict():
     imagefile = request.files['imagefile']
-    image_path = "C:/Users/Shubham/OneDrive/Desktop/flaskDemo/env/images/"+imagefile.filename
+    image_path = "C:/Users/Shubham/OneDrive/Desktop/flaskDemo/images/"+imagefile.filename
     imagefile.save(image_path)
     
     
