@@ -28,25 +28,23 @@ const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
+        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2'],
         datasets: [{
             label: 'Validation Accuracy',
-            data: [98.2, 92.0, 88.09, 96.48, 93, 86],
+            data: [98.2, 92.0, 88.09, 96.48, 93],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(255, 206, 86, 0.5)',
                 'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                'rgba(153, 102, 255, 0.5)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 1)'
             ],
             borderWidth: 1
         }]
@@ -63,25 +61,23 @@ const al = document.getElementById('dchart');
 const dcharts = new Chart(al, {
     type: 'bar',
     data: {
-        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
+        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2'],
         datasets: [{
             label: 'Average Runtime',
-            data: [180, 777, 344, 707, 2, 250],
+            data: [180, 777, 344, 707, 2],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(255, 206, 86, 0.5)',
                 'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                'rgba(153, 102, 255, 0.5)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 1)'
             ],
             borderWidth: 1
         }]
@@ -100,25 +96,23 @@ const p = document.getElementById('pChart');
 const pCharts = new Chart(p, {
     type: 'bar',
     data: {
-        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
+        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2'],
         datasets: [{
             label: 'Recall',
-            data: [0.80, 0.90, 0.92, 0.89,0.92 , 0.94],
+            data: [0.80, 0.90, 0.92, 0.89,0.92 ],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(255, 206, 86, 0.5)',
                 'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                'rgba(153, 102, 255, 0.5)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 1)'
             ],
             borderWidth: 1
         }]
@@ -140,25 +134,23 @@ const r = document.getElementById('rChart');
 const rCharts = new Chart(r, {
     type: 'bar',
     data: {
-        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2', 'CNN'],
+        labels: ['EfficientNetB0', 'EfficientNetB5', 'Resnet 50', 'Resnet 152', 'MobileNetV2'],
         datasets: [{
             label: 'Precision',
-            data: [0.86, 0.91, 0.91, 0.87,0.91 , 0.92],
+            data: [0.86, 0.91, 0.91, 0.87,0.91 ],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(255, 206, 86, 0.5)',
                 'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                'rgba(153, 102, 255, 0.5)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 1)'
             ],
             borderWidth: 1
         }]
