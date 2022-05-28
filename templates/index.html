@@ -29,7 +29,7 @@
             <ul>
               <li><a href="#hero" data-after="Home">About</a></li>
               <li><a href="#projects" data-after="Services">Results</a></li>
-              <li><a href="#boss" data-after="Contact">Upload</a></li>
+              <li><a href="#UPLOAD" data-after="Contact">Upload</a></li>
               <li><a href="#contact" data-after="Contact">Team</a></li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
       <div id="definition" >
         <div class="brain-cancer">
             <div class="head-section" style="background-color: #4c3ab7;">
-              BRAIN CANCER
+              BRAIN TUMOR
             </div>
             <div class="main-section" style="border: 2px solid #4c3ab7 ;">
               A brain tumor is a mass or growth of abnormal cells in your brain.
@@ -74,7 +74,7 @@ Brain tumor treatment options depend on the type of brain tumor you have, as wel
         </div>
         <div class="glioma-cancer">
             <div class="head-section" style="background-color: #04aa7a;">
-                GLIOMA CANCER
+                GLIOMA TUMOR
               </div>
               <div class="main-section" style="border: 2px solid #04aa7a;"> Glioma is a type of tumor that occurs in the brain and spinal cord. Gliomas begin in the gluey supportive cells (glial cells) that surround nerve cells and help them function.
 
@@ -131,18 +131,12 @@ Because most meningiomas grow slowly, often without any significant signs and sy
         <div class="all-projects">
           <div class="project-item">
             <div class="project-info">
-              <h1>Supervised Learning Algorithms Accuracy</h1>
+              <a href="google.com">
+              <h1>Supervised Learning Algorithms</h1>
+            </a>
             </div>
             <div class="project-img">
               <img src="{{url_for('static', filename='css/w2.jpeg')}}" alt="img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Supervised Learning Algorithms Precision</h1>
-            </div>
-            <div class="project-img">
-              <img src="{{url_for('static', filename='css/w3.jpeg')}}" alt="img" />
             </div>
           </div>
           <div class="project-item">
@@ -175,14 +169,6 @@ Because most meningiomas grow slowly, often without any significant signs and sy
             </div>
             <div class="project-img">
               <img src="{{url_for('static', filename='css/w7-b5.png')}}" alt="img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Basic CNN accuracy graph</h1>
-            </div>
-            <div class="project-img">
-              <img src="{{url_for('static', filename='css/w8-cnn.png')}}" alt="img" />
             </div>
           </div>
         </div>
@@ -354,7 +340,7 @@ Because most meningiomas grow slowly, often without any significant signs and sy
         
     <!-- Upload button to upload files -->
 
-    <div class="upload-img">
+    <div class="upload-img" id="UPLOAD">
         <div class="head-upload">UPLOAD</div>
         <div class="about-upload">Test our Transfer Learning Models by uploading an MRI image of a brain and check the results. The server return the result of our most efficent model i.e. EfficientB0 in a text format.</div>
         <div class="form-upload">
@@ -423,17 +409,14 @@ Because most meningiomas grow slowly, often without any significant signs and sy
         </div>
         <h2>Programming Langauge used- PYTHON</h2>
         <div class="social-icon">
-          <div class="social-item">
-            <a href="#"
-              ><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-          </div>
+          
           <div class="social-item" style="width: 21%;border-radius: 10%;">
-            <a href="#"
+            <a href="https://www.kaggle.com/code/shreyanshyadav1/notebook943aa65584"
               ><img src="{{url_for('static', filename='css/icons8-kaggle.svg')}}" alt=""></a>
           </div>
           
           <div class="social-item" style="width: 21%;">
-            <a href="#"
+            <a href="https://github.com/shubham00111/Major-Project-Cancer-Detection-"
               ><img src="{{url_for('static', filename='css/icons8-github (3).svg')}}" alt=""></a>
           </div>
         </div>
