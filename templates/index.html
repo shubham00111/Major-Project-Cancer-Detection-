@@ -42,11 +42,10 @@
     <section id="hero">
       <div class="hero container">
         <div>
-          <h1>Hello, <span></span></h1>
-          <h1>We are a Group of 4<span></span></h1>
+          <h1>Cancer <span></span></h1>
+          <h1>Accounts for nearly 1 in 6 deaths worldwide<span></span></h1>
           <h1>
-            We made this website that helps detecting Brain Tumor using MRI
-            Images<span></span>
+            Brain Cancer is a deadly cancer and has a low survival rate<span></span>
           </h1>
           <a href="#projects" type="button" class="cta">Prediction Results</a>
         </div>
@@ -58,7 +57,7 @@
      <!-- Definiton Section -->
      
      <!-- brain cancer and glioma tumor -->
-     <div id="definition" >
+      <div id="definition" >
         <div class="brain-cancer">
             <div class="head-section" style="background-color: #4c3ab7;">
               BRAIN CANCER
@@ -68,7 +67,9 @@
 
 Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors.
 
+How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.
 
+Brain tumor treatment options depend on the type of brain tumor you have, as well as its size and location
             </div>
         </div>
         <div class="glioma-cancer">
@@ -77,13 +78,14 @@ Many different types of brain tumors exist. Some brain tumors are noncancerous (
               </div>
               <div class="main-section" style="border: 2px solid #04aa7a;"> Glioma is a type of tumor that occurs in the brain and spinal cord. Gliomas begin in the gluey supportive cells (glial cells) that surround nerve cells and help them function.
 
-Three types of glial cells can produce tumors. 
+Three types of glial cells can produce tumors. Gliomas are classified according to the type of glial cell involved in the tumor, as well as the tumor's genetic features, which can help predict how the tumor will behave over time and the treatments most likely to work.
+
 </div>
             </div>
      </div>
 
      <!-- pitutary and meningioma -->
-     <div id="definition" >
+    <div id="definition" >
         <div class="brain-cancer">
             <div class="head-section" style="background-color:#8127ab;">
               PITUITARY TUMOR
@@ -93,6 +95,7 @@ Three types of glial cells can produce tumors.
 
 Most pituitary tumors are noncancerous (benign) growths (adenomas). Adenomas remain in your pituitary gland or surrounding tissues and don't spread to other parts of your body.
 
+There are various options for treating pituitary tumors, including removing the tumor, controlling its growth and managing your hormone levels with medications. Your doctor may recommend observation — or a ''wait and see'' approach.
 
 
             </div>
@@ -103,16 +106,18 @@ Most pituitary tumors are noncancerous (benign) growths (adenomas). Adenomas rem
               </div>
               <div class="main-section" style="border: 2px solid #bf3858;"> A meningioma is a tumor that arises from the meninges — the membranes that surround the brain and spinal cord. Although not technically a brain tumor, it is included in this category because it may compress or squeeze the adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head.
 
-Most meningiomas grow very slowly, often over many years without causing symptoms. But sometimes, their effects on nearby brain tissue, nerves or vessels may cause serious disability.
+Most meningiomas grow very slowly, often over many years without causing symptoms.
 
 Meningiomas occur more commonly in women and are often discovered at older ages, but they may occur at any age.
 
+Because most meningiomas grow slowly, often without any significant signs and symptoms, they do not always require immediate treatment and may be monitored over time.
 
 
 
 </div>
             </div>
      </div>
+    
     
 
     <!-- Definition section end -->
@@ -183,15 +188,18 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
         </div>
       </div>
 
-     <!-- Drop Down Menu for  -->
-      <div style="font-size:30px;position:absolute;margin-left: 14%;color: darkblue;">Comparison of Algorithms on the basis of :</div>
+    <!-- Drop Down Menu for  -->
+      <div style="font-size:3rem;margin-left: 15rem;color: darkblue;position: absolute;">Comparison of Algorithms on the basis of :
+      
       <select id="target" >
         <!-- <option value="">...</option> -->
         <option value="content_1" >Validation Accuracy</option>
         <option value="content_2">Average Runtime vs Epochs</option>
         <option value="content_3">Recall</option>
         <option value="content_4">Precision</option>
-        <select>
+      <select>
+        </div>
+     <br>
             
         <div id="content_1" class="vis">
           <!-- val. accuracy -->
@@ -205,10 +213,9 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
                 ></canvas>
               </div>
               <div id="content">
-                  
-                  <div clas="heading" style="font-size: larger;">Validation Accuracy</div>
+                  <div clas="heading" style="font-size: 2.5rem;">Validation Accuracy</div>
                   <br>
-                  <div class="heading-content" style="font-size: smaller;color: black;">
+                  <div class="heading-content" style="font-size:1.75rem;color: black;">
                     In other words, the test (or testing) accuracy often refers to the validation accuracy, that is, the accuracy you calculate on the data set you do not use for training, but you use (during the training process) for validating (or "testing") the generalisation ability of your model or for "early stopping".
                   </div>
 
@@ -230,9 +237,9 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
                       ></canvas>
                     </div>
                     <div id="content">
-                      <div class="heading" style="font-size: larger;">Average Runtime/ Epochs </div>
+                      <div class="heading" style="font-size: 2.5rem;">Average Runtime/ Epochs </div>
                       <br>
-                      <div class="heading-content" style="color: black;">
+                      <div class="heading-content" style="color: black;font-size: 1.75rem;">
                         The average runtime refers to total time taken by the epochs to run divided by the number of epochs.
                       </div>
                     </div>
@@ -252,9 +259,9 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
                 ></canvas>
               </div>
               <div id="content">
-                <div clas="heading" style="font-size: larger;">Recall</div>
+                <div clas="heading" style="font-size: 2.5rem;">Recall</div>
                   <br>
-                  <div class="heading-content" style="font-size: smaller;color: black;">
+                  <div class="heading-content" style="color: black;font-size: 1.75rem;">
                   Recall literally is how many of the true positives were recalled (found), i.e. how many of the correct hits were also found.</div>
               </div>
             </div>
@@ -272,9 +279,9 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
         ></canvas>
       </div>
       <div id="content">
-        <div clas="heading" style="font-size: larger;">Precision </div>
+        <div clas="heading" style="font-size: 2.5;">Precision </div>
                   <br>
-                  <div class="heading-content" style="font-size: smaller;color: black;">Precision (your formula is incorrect) is how many of the returned hits were true positive i.e. how many of the found were correct hits.</div>
+                  <div class="heading-content" style="font-size: 1.75rem;color: black;">Precision (your formula is incorrect) is how many of the returned hits were true positive i.e. how many of the found were correct hits.</div>
       </div>
     </div>
         </div>
@@ -284,9 +291,9 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
 
     
 
-    <div class="table" >
+    <div class="table">
 
-      <div class="table-heading" >Comparison Table</div>
+      <div class="table-heading" style="font-weight: bold;color:#002c5e">Comparison Table</div>
       <table class="content-table">
     <thead>
       <tr>
@@ -357,14 +364,14 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
                   <input type="submit" value="Predict Image" class="prediction-submit">
               </form>
               
-              <div class="prediction-result">{{result}}</div>
+              <div class="prediction-result" style="margin-top:4%;  ">{{result}}</div>
         </div>
       </div>
     
     <!-- End Projects Section -->
 
     <!-- Contact Section -->
-    <section id="contact">
+   <section id="contact">
       <div class="contact container">
         <div>
           <h1 class="section-title">The Team</h1>
@@ -388,7 +395,7 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
             <div class="contact-info">
               <h1>Team member 3</h1>
               <h2>Devashree Sharma</h2>
-              <h2>A2305218360</h2>
+              <h2>A2305218359</h2>
             </div>
           </div>
           <div class="contact-item">
@@ -418,24 +425,16 @@ Meningiomas occur more commonly in women and are often discovered at older ages,
         <div class="social-icon">
           <div class="social-item">
             <a href="#"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
-            /></a>
+              ><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
           </div>
-          <div class="social-item">
+          <div class="social-item" style="width: 21%;border-radius: 10%;">
             <a href="#"
-              ><img
-                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+              ><img src="{{url_for('static', filename='css/icons8-kaggle.svg')}}" alt=""></a>
           </div>
-          <div class="social-item">
+          
+          <div class="social-item" style="width: 21%;">
             <a href="#"
-              ><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a href="#"
-              ><img src="https://img.icons8.com/bubbles/100/000000/behance.png"
-            /></a>
+              ><img src="{{url_for('static', filename='css/icons8-github (3).svg')}}" alt=""></a>
           </div>
         </div>
       </div>
